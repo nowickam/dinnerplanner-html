@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dinner planner</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css"/>
+    <link rel="stylesheet" href="./src/view/style.css"/>
+    <link rel="stylesheet" href="./src/view/sidebar.css"/>
+    <link rel="stylesheet" href="./src/view/header.css"/>
+    <link rel="stylesheet" href="./src/view/details.css"/>
+    <link rel="stylesheet" href="./src/view/search.css"/>
+    <link rel="stylesheet" href="./src/view/overview.css"/>
+    <link rel="stylesheet" href="./src/view/printout.css"/>
+
+</head>
+<body>
+    <!-- body consists of containers that you pass in the constructors -->
+<div class="container page-content">
+    <div id="loader" class="spinner-border" role="status" style="display:none">
+        <span class="sr-only">Loading...</span>
+    </div>
+    <div id="container-header" style="display:none">
+    </div>
+    <div id="container-lower-header" style="display:none">
+    </div>
+    <div id="container-home" style="display:none">
+    </div>
+    <div id="container-side" style="display:none">
+    <div id="container-sidebar" style="display:none">
+    </div>
+    <div id="container-details" style="display:none">
+    </div>
+    <div id="container-search" style="display:none">
+    </div>
+</div>
+    <div id="container-overview" style="display:none">
+    </div>
+    <div id="container-printout" style="display:none">
+    </div>
+</div>
+
+<!-- The application JavaScript code -->
+<script src="src/model/apiConfig.js"></script>
+<script src="src/model/dinnerModel.js"></script>
+<script src="src/view/functions.js"></script>
+<script src="src/view/sidebarView.js"></script>
+<script src="src/view/headerView.js"></script>
+<script src="src/view/overviewView.js"></script>
+<script src="src/view/homeView.js"></script>
+<script src="src/view/searchView.js"></script>
+<script src="src/view/dishDetailsView.js"></script>
+<script src="src/view/lowerHeaderView.js"></script>
+<script src="src/view/printoutView.js"></script>
+<script src="src/controller/sidebarController.js"></script>
+<script src="src/controller/searchController.js"></script>
+<script src="src/controller/dishDetailsController.js"></script>
+<script src="src/controller/lowerHeaderController.js"></script>
+<script src="src/controller/homeController.js"></script>
+<script src="src/controller/overviewController.js"></script>
+<script src="src/controller/headerController.js"></script>
+<script src="src/app.js"></script>
+
+</body>
+</html>

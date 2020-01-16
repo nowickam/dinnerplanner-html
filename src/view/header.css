@@ -1,0 +1,28 @@
+#header{
+    background-color: gainsboro;
+    height: 6em;
+    vertical-align: middle;
+    border-bottom: 2px solid darkgray;
+    border-top: 2px solid darkgray;
+}
+
+#headerText{
+    cursor: pointer;
+}
+
+h1{
+    text-align: center;
+    font-size: 4em;
+    margin: 5px;
+}
+
+@media screen and (max-width:600px){ 
+    h1{
+       font-size: 3em; 
+    } 
+}
+@media screen and (max-width:350px){ 
+    h1{
+       font-size: 2em; 
+    } 
+}

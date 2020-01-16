@@ -1,0 +1,99 @@
+#sideBarView{
+    width: 15em;
+    border-right: 2px solid black;
+    height: 100%; 
+}
+
+#searchIndex{
+    display:flex;
+    flex-direction: row;
+    padding: 5px;
+    justify-content: space-between; 
+    background-color: gainsboro;
+    border-top:2px solid black;
+    border-bottom:2px solid black;
+}
+
+.side-padding{
+    padding:10px;
+}
+
+
+.value-num-guests{
+    margin: 5px;
+    width: 30px;
+}
+
+.item{
+    display:flex;
+    flex-direction:row;
+    background-color: rgb(233, 233, 233);
+    border:2px solid orange;
+    padding: 4px;
+    margin: 2px 0px 2px 0px;
+    cursor: pointer;
+}
+
+.item-price{
+    flex:1;
+    text-align: right;
+} 
+
+.item-name{
+    flex:3;
+}
+
+.value-total-price{
+    text-align:right;
+}
+
+/* #container-side{
+    display:flex;
+    flex-direction:row;
+} */
+
+#container-sidebar{
+    width:fit-content;
+}
+#menu-title{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  width:100%;
+}
+
+#menu-icon {
+  display: none;
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+
+@media screen and (max-width:600px){ 
+    #sideBarView{
+        width: 100%;
+        border-bottom: 2px solid black;
+        border-right: none;
+    }
+    #searchIndex{
+        padding:5px 20px;
+    }
+    .side-padding{
+        margin:10px;
+        padding:10px;
+        width:90%;
+    }
+    #menu-icon {
+        display: flex;
+        cursor: pointer;
+    }
+    div#container-side{
+        flex-direction:column;
+    }
+    #container-sidebar{
+        width:100%;
+    }
+
+} 

@@ -1,0 +1,123 @@
+#lower-header{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    border-bottom:2px solid black;
+    height:4em;
+    padding-left:5vw;
+    padding-right:5vw;
+}
+
+#print-container{
+    text-align: center;
+    margin:50px;
+    padding-top:50px;
+    border-top:2px solid black;
+}
+
+#toPrintBtn{
+    margin:20px;
+    border: 1px solid;
+    padding: 5px;
+    box-shadow: 5px 5px;
+    background-color: orange;
+    white-space: nowrap;
+    padding: 10px 30px 10px 30px;
+    cursor: pointer;
+}
+
+#dishItemsOverview{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+#price{
+    text-align: right;
+    color: brown;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    font-weight:bold;
+}
+
+#total-price{
+    display:flex;
+    flex-direction: column;
+    border-left:2px solid black;
+    white-space: pre-line;
+    justify-content: flex-end;
+    color: brown;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-top:20px;
+    font-weight:bold;
+}
+
+#item-container{
+    padding-right:10px;
+}
+
+#dishes-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+@media screen and (max-width:600px){ 
+    #lower-header{
+        padding:5px;
+    }
+    h2{
+        font-size: 1em;
+        padding-top: 5px;
+    }
+    #dishItemsOverview{
+        flex-direction:column;
+        text-align:center;
+    }
+    #dishes-container{
+        display:flex;
+        flex-direction: column;
+    }
+    #item-container{
+        padding:10px;
+    }
+    .dishItems{
+        margin:0;
+        margin-bottom:15px;
+        width:100%;
+    }
+    .dishItems img{
+        height:auto;
+        width:100%;
+    }
+    #price{
+        text-align:center;
+        padding:10px 0 0 0;
+    }
+    #total-price{
+        border-left:none;
+        padding:0;
+        padding-top:20px;
+        margin:10px 50px;
+        border-top: 2px solid black;
+    }
+    #print-container{
+        margin: 10px 50px;
+        padding-top:30px;
+        padding-bottom:20px;
+    }    
+    #descr-img{
+        width:100%;
+    }
+    #ingredients-table{
+        width:90%;
+    }
+} 
+
+
+
